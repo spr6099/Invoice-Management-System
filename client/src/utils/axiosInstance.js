@@ -1,7 +1,6 @@
 import axios from "axios";
 
-// export const baseUrl = "http://localhost:4001/api";
-export const baseUrl = "https://invoice-msanagement-system-78j3.vercel.app";
+export const baseUrl = "https://invoice-management-system-45db.vercel.app/api";
 
 const instance = axios.create({
   baseURL: baseUrl,
