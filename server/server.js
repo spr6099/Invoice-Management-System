@@ -13,16 +13,7 @@ const app = express();
 
 app.use(express.json());
 // app.use(cors());
-app.use(cors({
-  origin: [
-    "http://localhost:5173",          // local Vite
-    "http://localhost:3000",          // local CRA
-    "https://your-frontend.onrender.com" // production frontend
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true
-}));
+app.use(cors());
 db();
 
 app.use("/api/user", authRouter);
