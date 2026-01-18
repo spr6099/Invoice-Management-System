@@ -1,6 +1,7 @@
 import axios from "axios";
 
-export const baseUrl = "http://localhost:4001/api";
+// export const baseUrl = "http://localhost:4001/api";
+export const baseUrl = "https://api-invoice-management-system.onrender.com";
 
 const instance = axios.create({
   baseURL: baseUrl,
